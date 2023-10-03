@@ -112,7 +112,9 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  let evens = numbers.filter
+  // don't really understand getting evens/odds in an array, look at later
+  let evens = numbers.filter((number) => number % 2 === 0)
+  return evens;
 }
 
 /**
@@ -120,5 +122,6 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  let odds = numbers.filter((number) => number % 2 !== 0)
+  return odds
 }
