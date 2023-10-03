@@ -4,8 +4,8 @@
 // Prompt the user for a list of integers separated by commas.
 const userInputString = prompt(
   "Please enter some integers separated by commas.",
-  "1,2,3,4,5"
-);
+   "1,2,3,4,5"
+   );
 
 // Split the string of numbers into an array of strings.
 const stringArray = userInputString.split(",");
@@ -37,7 +37,7 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  return numbers.length;
 }
 
 /**
@@ -45,7 +45,11 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum;
 }
 
 /**
@@ -53,7 +57,13 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  let mean = sum / numbers.length
+
+  return mean;
 }
 
 /**
